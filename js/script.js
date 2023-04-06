@@ -43,14 +43,14 @@
 
     for (const task of tasks) {
       htmlString += `
-            <li
-            ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-            >
-            <button class="js-done">Zrobione</button>
-            <button class="js-remove">Usuń</button>
-            ${task.content}
-            </li>
-            `;
+        <li
+        class="list_item ${task.done ? " list_item--done" : ""}"
+        >
+          <button class="js-done button_add"></button>
+         ${task.content}
+          <button class="js-remove button_remove"></button>
+        </li>
+      `; //<div class="list_line"></div>    glupi sposob na wstawienie lini
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -76,7 +76,6 @@
     render();
 
     const form = document.querySelector(".js-form");
-
     form.addEventListener("submit", onFormSubmit);
   };
 

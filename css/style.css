@@ -1,22 +1,118 @@
-.container {
-    max-width: 1000px; 
-    margin: 5px auto;
-    padding: 5px;
- }
+html {
+    box-sizing: border-box;
+    background-color: rgb(237, 237, 237);
+}
 
-.header {
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.header--title {
     display: flex;
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+}
+
+.header--text {
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.container__line {
+    margin-bottom: 10px;
+    border: 1px solid rgb(237, 237, 237);
+    margin-left: -10px;
+    margin-right: -10px;
+
 }
 
 .newTask {
     min-width: 80%;
+    padding: 5px;
+}
+
+
+.container__list {
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 10px;
+    background-color: white;
 }
 
 .button {
     background-color: teal;
+    border: none;
     color: white;
+    padding: 5px;
     min-width: 15%;
-    
 }
 
+.button_add {
+    background-color: green;
+    color: white;
+    min-width: 30px;
+    min-height: 30px;
+}
 
+.button_add:hover {
+    background: hsl(120, 97%, 30%);
+}
+
+.button_remove {
+    border: none;
+    min-width: 30px;
+    min-height: 30px;
+    background: center / contain no-repeat url("../images/bin1.png") rgba(255, 0, 0, 0.719);
+}
+
+.list_item {
+    list-style-type: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 5px;
+    align-items: center;
+    border-bottom: 1px solid rgb(237, 237, 237);
+
+
+
+    /*display: flex;                          nie działa
+    align-items: center;
+    justify-content: space-between;*/
+}
+
+.list_item--done {
+    text-decoration: line-through;
+}
+
+.tasks {
+    flex-direction: column;
+    flex-basis: 500px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*.list_line {                                   linia z js
+    margin-bottom: 10px;
+    border: 1px solid rgb(237, 237, 237);
+}*/

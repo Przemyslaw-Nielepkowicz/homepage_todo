@@ -9,27 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
-    <div class="container">
-        <header class="header">
-            <h1>Lista Zadań</h1>
-        </header>
+<body class="body">
+    <header class="header--title">
+        <h1>Lista zadań</h1>
+    </header>
 
-        <form class="js-form">
+    <div class="container">
+
+        <h2 class="header--text">Dodaj nowe zadanie</h2>
+
+        <div class="container__line"></div>
+
+        <form class="js-form form">
             <input class="js-newTask newTask" type="text" placeholder="Co jest do zrobienia?">
             <button class="js-button button">Dodaj zadanie</button>
         </form>
+    </div>
 
-        <ul class="js-tasks">
+    <div class="container__list">
+        <h3>Lista zadań</h3>
+
+        <div class="container__line"></div>
+
+        <ul class="js-tasks tasks">
 
         </ul>
     </div>
-
 </body>
 
 </html>
