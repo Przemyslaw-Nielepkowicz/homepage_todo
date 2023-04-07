@@ -4,7 +4,7 @@
 
 https://przemyslaw-nielepkowicz.github.io/homepage_todo/
 
-![Page Gif]()
+![Page Gif](images/todo.gif)
 
 ### The website is created while learning the basics of programming.
 ### Used Technologies:
