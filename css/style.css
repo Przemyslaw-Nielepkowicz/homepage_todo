@@ -54,6 +54,7 @@ html {
     margin: 5px auto;
     padding: 10px;
     background-color: white;
+    word-break: break-all;
 }
 
 .button {
@@ -64,7 +65,7 @@ html {
     min-width: 15%;
 }
 
-.button_add {
+.button_done {
     background-color: green;
     color: white;
     min-width: 30px;
@@ -90,21 +91,18 @@ html {
     grid-gap: 5px;
     align-items: center;
     border-bottom: 1px solid rgb(237, 237, 237);
-
-
-
     /*display: flex;                          nie działa
     align-items: center;
     justify-content: space-between;*/
 }
 
-.list_item--done {
+.task__text--done {
     text-decoration: line-through;
 }
 
 .tasks {
-    flex-direction: column;
-    flex-basis: 500px;
+    padding: 5px;
+    max-width: 1000px;
 }
 
 .form {
@@ -112,7 +110,7 @@ html {
     justify-content: space-around;
 }
 
-/*.list_line {                                   linia z js
+/*.list_line {                                  wstawianie lini z js
     margin-bottom: 10px;
     border: 1px solid rgb(237, 237, 237);
 }*/

@@ -43,11 +43,9 @@
 
     for (const task of tasks) {
       htmlString += `
-        <li
-        class="list_item ${task.done ? " list_item--done" : ""}"
-        >
-          <button class="js-done button_add"></button>
-         ${task.content}
+        <li class="list_item">
+          <button class="js-done button_done">${task.done ? "✔" : ""}</button>
+          <span class="task__text ${task.done ? "task__text--done" : ""}">${task.content}</span>
           <button class="js-remove button_remove"></button>
         </li>
       `; //<div class="list_line"></div>    glupi sposob na wstawienie lini
@@ -63,13 +61,16 @@
   const onFormSubmit = (event) => {
     event.preventDefault();
 
-    const newTaskContent = document.querySelector(".js-newTask").value.trim();
+    const newTaskElement = document.querySelector(".js-newTask");
+    const newTaskContent = newTaskElement.value.trim();
 
-    if (newTaskContent === "") {
-      return;
-    }
+    if (newTaskContent !== "") {
+      newTaskElement.value = "";
+      
+      addNewTask(newTaskContent);
+    };
 
-    addNewTask(newTaskContent);
+    newTaskElement.focus();
   };
 
   const init = () => {
