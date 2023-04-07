@@ -1,0 +1,17 @@
+.container__form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.newTask {
+    min-width: 80%;
+    padding: 5px;
+}
+
+.button {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 5px;
+    min-width: 15%;
+}

@@ -12,22 +12,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/container__form.css" rel="stylesheet">
+    <link href="css/container__list.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
 <body class="body">
-    <header class="header--title">
+    <header class="header">
         <h1>Lista zadań</h1>
     </header>
 
     <div class="container">
 
-        <h2 class="header--text">Dodaj nowe zadanie</h2>
+        <h2 class="container__header">Dodaj nowe zadanie</h2>
 
         <div class="container__line"></div>
 
-        <form class="js-form form">
+        <form class="js-form container__form">
             <input class="js-newTask newTask" type="text" placeholder="Co jest do zrobienia?">
             <button class="js-button button">Dodaj zadanie</button>
         </form>

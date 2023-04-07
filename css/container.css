@@ -1,0 +1,20 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.container__header {
+    margin: 5px auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.container__line {
+    margin-bottom: 10px;
+    border: 1px solid rgb(237, 237, 237);
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
