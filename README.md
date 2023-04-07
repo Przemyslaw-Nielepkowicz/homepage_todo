@@ -3,6 +3,7 @@
 ## Demo 
 
 https://przemyslaw-nielepkowicz.github.io/homepage_todo/
+
 ![Page Gif]()
 
 ### The website is created while learning the basics of programming.
